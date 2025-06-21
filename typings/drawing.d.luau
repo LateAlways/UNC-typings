@@ -66,7 +66,7 @@ type Fonts = {
 
 type DrawingGlobal = {
     Fonts: Fonts,
-    new: (type: "Line" | "Text" | "Image" | "Circle" | "Square" | "Quad" | "Triangle") -> Line | Text | Image | Circle | Square | Quad | Triangle,
+    new: (type: "Line" | "Text" | "Image" | "Circle" | "Square" | "Quad" | "Triangle") -> Drawing | Line | Text | Image | Circle | Square | Quad | Triangle,
 }
 
 declare Drawing: DrawingGlobal
