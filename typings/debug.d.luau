@@ -12,7 +12,7 @@ type DebugInfo = {
     is_vararg: number,
 }
 
-type Debug = {
+type DebugGlobal = {
     getconstant: (func: _function | number, index: number) -> any,
     getconstants: (func: _function | number) -> {any},
 
@@ -31,4 +31,4 @@ type Debug = {
     setupvalue: (func: _function | number, index: number, value: any) -> (),
 }
 
-declare debug: Debug
+declare debug: DebugGlobal
