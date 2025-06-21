@@ -1,4 +1,4 @@
-type Cache = {
+type CacheGlobal = {
     invalidate: (object: Instance) -> (),
     iscached: (object: Instance) -> boolean,
     replace: (object: Instance, newObject: Instance) -> (),
@@ -7,4 +7,4 @@ type Cache = {
 declare function cloneref(object: Instance): Instance
 declare function compareinstances(a: Instance, b: Instance): boolean
 
-declare cache: Cache
+declare cache: CacheGlobal
